@@ -2,8 +2,8 @@ import cv2
 import time
 import random
 background_image = cv2.imread("istanbul.jpg")
-#Video Source = https://www.youtube.com/watch?v=CNjggrxUQ78
-cap = cv2.VideoCapture("fire.mp4")
+#You cannot open youtube videos directly 
+cap = cv2.VideoCapture("https://www.youtube.com/watch?v=CNjggrxUQ78")
 fps= int(cap.get(cv2.CAP_PROP_FPS))
 background_image = cv2.resize(background_image, (1280,720))
 x=150
